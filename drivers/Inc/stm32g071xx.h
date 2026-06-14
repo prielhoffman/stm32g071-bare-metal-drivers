@@ -163,6 +163,9 @@
 #define TIM16_BASEADDR              (APB2PERIPH_BASE + 0x4400UL)
 #define TIM17_BASEADDR              (APB2PERIPH_BASE + 0x4800UL)
 
+#define SYSTICK_BASEADDR            0xE000E010UL
+#define SysTick                     ((SysTick_RegDef_t *)SYSTICK_BASEADDR)
+
 /* ------------------------------------------------------------
  * Peripheral register definition structures
  * ------------------------------------------------------------ */
@@ -289,6 +292,13 @@ typedef struct
     __vo uint32_t TDR;        /* Transmit data register,  offset 0x28 */
     __vo uint32_t PRESC;      /* Prescaler register,      offset 0x2C */
 } USART_RegDef_t;
+
+typedef struct{
+    volatile uint32_t CTRL;
+    volatile uint32_t LOAD;
+    volatile uint32_t VAL;
+    volatile uint32_t CALIB;
+} SysTick_RegDef_t;
 
 /* ------------------------------------------------------------
  * Peripheral definitions
