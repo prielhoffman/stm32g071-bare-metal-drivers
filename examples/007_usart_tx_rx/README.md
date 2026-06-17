@@ -33,13 +33,13 @@ Some tests use a second STM32 board for bidirectional communication.
 
 The capture below shows the STM32G071 transmitting a string over USART TX.
 
-![USART transmit](logic_analyzer/usart_tx.png)
+![USART transmit](logic_analyzer/uart_tx.png)
 
 ### USART TX/RX
 
 The capture below shows bidirectional USART communication between two STM32 boards.
 
-![USART TX RX](logic_analyzer/usart_tx_rx.png)
+![USART TX RX](logic_analyzer/uart_tx_rx.png)
 
 ## Notes
 
