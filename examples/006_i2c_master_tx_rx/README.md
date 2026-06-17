@@ -39,25 +39,25 @@ Some tests use a second board as the I2C slave.
 
 The master writes data to the I2C slave address and receives ACK responses.
 
-![I2C master transmit](logic_analyzer/i2c_master_tx_logic.png)
+![I2C master transmit](logic_analyzer/I2C_MasterSendData.png)
 
 ### I2C Master Receive
 
 The master reads data from the I2C slave.
 
-![I2C master receive](logic_analyzer/i2c_master_rx_logic.png)
+![I2C master receive](logic_analyzer/I2C_MasterReceiveData.png)
 
 ### I2C Master Receive Using Interrupts
 
 This capture validates the interrupt-based receive flow.
 
-![I2C master receive interrupt](logic_analyzer/i2c_master_rx_it_logic.png)
+![I2C master receive interrupt](logic_analyzer/i2c_master_rx_testing_it.png)
 
 ### Slave String Transmit
 
 The slave transmits a string to the master, and the decoded bytes can be seen on the I2C bus.
 
-![I2C slave string transmit](logic_analyzer/i2c_slave_tx_string_logic.png)
+![I2C slave string transmit](logic_analyzer/i2c_slave_tx_string_4.png)
 
 ## Notes
 
