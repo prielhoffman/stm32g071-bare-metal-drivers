@@ -62,3 +62,4 @@ The slave transmits a string to the master, and the decoded bytes can be seen on
 ## Notes
 
 These examples were used to verify the custom I2C driver behavior on the physical bus using a logic analyzer.
+ 
